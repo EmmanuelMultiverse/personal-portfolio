@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /* background-color: black; */
+    background-image: url("/wallpaper-personal-website.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.files-container {
+    padding: 2%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 3.5em; 
+}
+
+.file-container {
+    position: relative;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .7em;
+}
+
+.file-name {
+    align-self: center;
+    font-size: 20px;
+}
+
+.file-icon {
+    
+    align-self: center;
+    width: 75x; 
+    height: 75px;
+}
+
+#window-container {
+    position: relative;
+    /* margin: auto; */
+    height: 80%;
+    width: 70%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+#window-border {
+    /* background-color: red; */
+    border-radius: 25px;
+    overflow-y: auto;
+    height: 95%;
+    background-color: white;
+    bottom: 0;
+    position: relative;
+    border-radius: 25px;
+}
+
+#window-content {
+    /* padding: 2%; */
+    padding-top: 5%;
+    /* margin-top: 10%; */
+    color: black;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    height: 95%;
+    padding-top: 3%;
+    position:relative; z-index:1;
+}
+
+#navbar {
+    position: relative;
+    background-color: #3d556b;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    padding: 10px;
+    color: white;
+}
+
+
+.welcome-text {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2%;
+    gap: 4em;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.technologies {
+    color: lightgray;
+}
+
+.experience-container {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: .5em;
+}
+
+.experience-summary {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 4%;
+}
+
+.two-container {
+    display: flex;
+    gap: 1em;
+}
+
+.project-container {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.project-img {
+    height: 200px;
+}
+
+#headshot {
+    height: 400px;
+    border-radius: 25px;
+}
+
+.about-me-text {
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.bar {
+    width: 100%;
+    height:5%; 
+    z-index:2;
+    position:absolute; 
+    background:#969696;
+    border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    left:0; 
+    right:20px;
+}
+
+#top {
+    top:0;
+    display: flex;
+}

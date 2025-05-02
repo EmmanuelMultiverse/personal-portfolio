@@ -1,53 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css"/>
-    <script src="/script.js" defer></script>
-</head>
-<body>
-    <div class="main-container">
-        <div class="files-container">
-            <div class="file-container">
-                <img id="icon-1" class="file-icon" src="/assets/images/file.png" />
-                <div class="file-name">/README.md</div>
-            </div>
-            <div class="file-container">
-                <img id="icon-2" class="file-icon" src="/assets/images/file.png" />
-                <div class="file-name">/Experience</div>
-            </div>
-            <div class="file-container">
-                <img id="icon-3" class="file-icon" src="/assets/images/file.png" />
-                <div class="file-name">/Portfolio</div>
-            </div>
-        </div>
-        <div id="window-container">
-            
-            <div id="window-border">
-                <div id="top" class="bar">
-                    <img class="window-buttons" src="/assets/images/red-button.png"/>
-                    <img class="window-buttons" src="/assets/images/yellow-button.png"/>
-                    <img class="window-buttons" src="assets/images/green-button.png"/>
-                </div>
-                <div id="window-content">
-                    <header id="navbar">
+let window_container = document.querySelector("#window-container");
+
+console.log(window_container);
+
+let welcome_text = document.querySelector(".welcome-text");
+
+let get_about_me = () => {
+    let about_me = document.createElement("div")
+    about_me.classList.add("about-me")
+    about_me.innerHTML = `
+    <header id="navbar">
                         <div id="about-me-button">About Me</div>
                         <div id="experience-button">Experience</div>
                         <div id="portfolio-button">Portfolio</div>
                     </header>
-                    <div class="welcome-text">Welcome To My Page!<br>CLick On The Files The Right!!</div>
-                    <!-- <div class="about-me">
-                        <img id="headshot" src="/assets/images/headshot.png"/>
-                        <div class="about-me-text">
-                            <p>Hello! My name is Emmanuel Luis and I am a software engineer who recently graduated from the University of Texas at Dallas! </p>
-                            <p>Currently I am doing an apprenticeship with Verizon & Multiverse! I am currently attending a bootcamp and will be learning front-end and back-end engineering!</p>
-                        </div>
-                     </div> -->
-                    <!-- EXPERIENCE -->
-                     <!-- <div id="experience">
-                        <div class="experience-container">
+            <img id="headshot" src="/assets/images/headshot.png"/>
+            <div class="about-me-text">
+                <p>Hello! My name is Emmanuel Luis and I am a software engineer who recently graduated from the University of Texas at Dallas! </p>
+                <p>Currently I am doing an apprenticeship with Verizon & Multiverse! I am currently attending a bootcamp and will be learning front-end and back-end engineering!</p>
+            </div>
+        `
+    return about_me
+};
+
+let get_experience = () => {
+    let experience = document.createElement("div");
+    experience.id = "experience";
+    experience.innerHTML = `
+    <header id="navbar">
+                        <div id="about-me-button">About Me</div>
+                        <div id="experience-button">Experience</div>
+                        <div id="portfolio-button">Portfolio</div>
+                    </header>
+        <div class="experience-container">
                             <h1 class="work-site">
                                 University of Texas at Dallas, Computer Science Degree
                             </h1>
@@ -112,10 +96,20 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-                    <!-- PORTFOLIO -->
-                    <!-- <div id="portfolio">
-                        <div class="two-container">
+    `
+    return experience
+};
+
+let get_portfolio = () => {
+    let protfolio = document.createElement("div");
+    protfolio.id = "portfolio";
+    protfolio.innerHTML = `
+        <header id="navbar">
+                        <div id="about-me-button">About Me</div>
+                        <div id="experience-button">Experience</div>
+                        <div id="portfolio-button">Portfolio</div>
+                    </header>
+        <div class="two-container">
                             <div class="project-container">
                                 <img class="project-img" src="/assets/images/budget-app.png"/>
                                 <div class="project-description">
@@ -265,13 +259,27 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> -->
-                <!-- <div id="bottom" class="bar"></div> -->
-            </div>
-            
-        </div>
+    `
 
-    </div>
-</body>
-</html>
+    return protfolio
+}
+
+let window_content = document.querySelector("#window-content");
+
+let about_me_button = document.querySelector("#icon-1");
+let experience_button = document.querySelector("#icon-2");
+let portfolio_button = document.querySelector("#icon-3");
+
+about_me_button.addEventListener("click", () => {
+    window_content.innerHTML = get_about_me().innerHTML;
+})
+
+
+experience_button.addEventListener("click", () => {
+    window_content.innerHTML = get_experience().innerHTML;
+})
+
+portfolio_button.addEventListener("click", () => {
+    window_content.innerHTML = get_portfolio().innerHTML;
+})
+
