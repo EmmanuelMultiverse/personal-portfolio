@@ -5,7 +5,7 @@
 body {
     height: 100vh;
     /* background-color: black; */
-    background-image: url("/wallpaper-personal-website.jpg");
+    background-image: url("assets/images/wallpaper-personal-website.jpg");
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
