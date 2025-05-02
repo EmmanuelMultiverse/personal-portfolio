@@ -13,7 +13,7 @@ let get_about_me = () => {
                         <div id="experience-button">Experience</div>
                         <div id="portfolio-button">Portfolio</div>
                     </header>
-            <img id="headshot" src="/assets/images/headshot.png"/>
+            <img id="headshot" src="assets/images/headshot.png"/>
             <div class="about-me-text">
                 <p>Hello! My name is Emmanuel Luis and I am a software engineer who recently graduated from the University of Texas at Dallas! </p>
                 <p>Currently I am doing an apprenticeship with Verizon & Multiverse! I am currently attending a bootcamp and will be learning front-end and back-end engineering!</p>
@@ -111,7 +111,7 @@ let get_portfolio = () => {
                     </header>
         <div class="two-container">
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/budget-app.png"/>
+                                <img class="project-img" src="assets/images/budget-app.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -125,7 +125,7 @@ let get_portfolio = () => {
                                 </div>
                             </div>
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/myngly-mv.png"/>
+                                <img class="project-img" src="assets/images/myngly-mv.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -141,7 +141,7 @@ let get_portfolio = () => {
                         </div>
                         <div class="two-container">
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/intern-mv.png"/>
+                                <img class="project-img" src="assets/images/intern-mv.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         AWS Oncall Bot
@@ -155,7 +155,7 @@ let get_portfolio = () => {
                                 </div>
                             </div>
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/myngly-mv.png"/>
+                                <img class="project-img" src="assets/images/myngly-mv.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -171,7 +171,7 @@ let get_portfolio = () => {
                         </div>
                         <div class="two-container">
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/budget-app.png"/>
+                                <img class="project-img" src="assets/images/budget-app.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -185,7 +185,7 @@ let get_portfolio = () => {
                                 </div>
                             </div>
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/myngly-mv.png"/>
+                                <img class="project-img" src="assets/images/myngly-mv.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -201,7 +201,7 @@ let get_portfolio = () => {
                         </div>
                         <div class="two-container">
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/budget-app.png"/>
+                                <img class="project-img" src="assets/images/budget-app.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -215,7 +215,7 @@ let get_portfolio = () => {
                                 </div>
                             </div>
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/myngly-mv.png"/>
+                                <img class="project-img" src="assets/images/myngly-mv.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -231,7 +231,7 @@ let get_portfolio = () => {
                         </div>
                         <div class="two-container">
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/budget-app.png"/>
+                                <img class="project-img" src="assets/images/budget-app.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
@@ -245,7 +245,7 @@ let get_portfolio = () => {
                                 </div>
                             </div>
                             <div class="project-container">
-                                <img class="project-img" src="/assets/images/myngly-mv.png"/>
+                                <img class="project-img" src="assets/images/myngly-mv.png"/>
                                 <div class="project-description">
                                     <div class="project-name">
                                         Budget App 
