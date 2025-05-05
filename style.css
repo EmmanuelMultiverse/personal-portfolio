@@ -90,6 +90,7 @@ body {
 
 #navbar {
     position: relative;
+    top: 0;
     background-color: #3d556b;
     width: 100%;
     display: flex;

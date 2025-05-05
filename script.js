@@ -8,29 +8,22 @@ let get_about_me = () => {
     let about_me = document.createElement("div")
     about_me.classList.add("about-me")
     about_me.innerHTML = `
-    <header id="navbar">
-                        <div id="about-me-button">About Me</div>
-                        <div id="experience-button">Experience</div>
-                        <div id="portfolio-button">Portfolio</div>
-                    </header>
+        <div class="about-me">
             <img id="headshot" src="/assets/images/headshot.png"/>
             <div class="about-me-text">
                 <p>Hello! My name is Emmanuel Luis and I am a software engineer who recently graduated from the University of Texas at Dallas! </p>
                 <p>Currently I am doing an apprenticeship with Verizon & Multiverse! I am currently attending a bootcamp and will be learning front-end and back-end engineering!</p>
             </div>
+        </div>
         `
+    
     return about_me
 };
 
 let get_experience = () => {
     let experience = document.createElement("div");
     experience.id = "experience";
-    experience.innerHTML = `
-    <header id="navbar">
-                        <div id="about-me-button">About Me</div>
-                        <div id="experience-button">Experience</div>
-                        <div id="portfolio-button">Portfolio</div>
-                    </header>
+    experience.innerHTML += `
         <div class="experience-container">
                             <h1 class="work-site">
                                 University of Texas at Dallas, Computer Science Degree
@@ -97,18 +90,14 @@ let get_experience = () => {
                             </div>
                         </div>
     `
+    console.log(experience);
     return experience
 };
 
 let get_portfolio = () => {
     let protfolio = document.createElement("div");
     protfolio.id = "portfolio";
-    protfolio.innerHTML = `
-        <header id="navbar">
-                        <div id="about-me-button">About Me</div>
-                        <div id="experience-button">Experience</div>
-                        <div id="portfolio-button">Portfolio</div>
-                    </header>
+    protfolio.innerHTML += `
         <div class="two-container">
                             <div class="project-container">
                                 <img class="project-img" src="/assets/images/budget-app.png"/>
@@ -260,7 +249,7 @@ let get_portfolio = () => {
                             </div>
                         </div>
     `
-
+    console.log(protfolio.outerHTML);
     return protfolio
 }
 
@@ -270,16 +259,34 @@ let about_me_button = document.querySelector("#icon-1");
 let experience_button = document.querySelector("#icon-2");
 let portfolio_button = document.querySelector("#icon-3");
 
+const get_nav_bar = () => {
+    let nav_bar = document.createElement("div");
+
+    nav_bar.innerHTML = `
+        <header id="navbar">
+                        <div id="about-me-button">About Me</div>
+                        <div id="experience-button">Experience</div>
+                        <div id="portfolio-button">Portfolio</div>
+                    </header>
+    `
+
+    return nav_bar;
+}
+
+let nav_bar = get_nav_bar();
+
 about_me_button.addEventListener("click", () => {
-    window_content.innerHTML = get_about_me().innerHTML;
+    let about_me = get_about_me().innerHTML;
+    console.log(about_me)
+    window_content.innerHTML = nav_bar.innerHTML + get_about_me().innerHTML;
 })
 
 
 experience_button.addEventListener("click", () => {
-    window_content.innerHTML = get_experience().innerHTML;
+    window_content.innerHTML = nav_bar.innerHTML + get_experience().outerHTML;
 })
 
 portfolio_button.addEventListener("click", () => {
-    window_content.innerHTML = get_portfolio().innerHTML;
+    window_content.innerHTML = nav_bar.innerHTML + get_portfolio().outerHTML;
 })
 
