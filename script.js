@@ -7,12 +7,8 @@ let welcome_text = document.querySelector(".welcome-text");
 let get_about_me = () => {
     let about_me = document.createElement("div")
     about_me.classList.add("about-me")
-    about_me.innerHTML = `
-    <header id="navbar">
-                        <div id="about-me-button">About Me</div>
-                        <div id="experience-button">Experience</div>
-                        <div id="portfolio-button">Portfolio</div>
-                    </header>
+    about_me.innerHTML += `
+            <div class="about-me">
             <img id="headshot" src="assets/images/headshot.png"/>
             <div class="about-me-text">
                 <p>Hello! My name is Emmanuel Luis and I am a software engineer who recently graduated from the University of Texas at Dallas! </p>
@@ -279,9 +275,9 @@ const get_nav_bar = () => {
 
 let nav_bar = get_nav_bar();
 
+
+
 about_me_button.addEventListener("click", () => {
-    let about_me = get_about_me().innerHTML;
-    console.log(about_me)
     window_content.innerHTML = nav_bar.innerHTML + get_about_me().innerHTML;
 })
 
@@ -293,4 +289,5 @@ experience_button.addEventListener("click", () => {
 portfolio_button.addEventListener("click", () => {
     window_content.innerHTML = nav_bar.innerHTML + get_portfolio().outerHTML;
 })
+
 
